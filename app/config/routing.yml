@@ -27,9 +27,6 @@ fos_oauth_server_token:
 fos_oauth_server_authorize:
     resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
 
-NelmioApiDocBundle:
-    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
-    prefix:   /api/doc
 
 # fantasmoApiBundle
 fantasmo_api_bundle:
@@ -41,3 +38,7 @@ fantasmo_api_bundle:
 fantasmo_frontend_bundle:
     resource: "@FantasmoFrontendBundle/Controller/"
     type:     annotation
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
