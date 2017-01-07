@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fantasmo game</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+    <app>Loading...</app>
+
+    {% javascripts '@FantasmoFrontendBundle/dist/main.bundle.js' %}
+        <script async src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+</body>
+</html>
+
+
